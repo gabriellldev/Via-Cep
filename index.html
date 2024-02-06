@@ -4,17 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViaCEP API</title>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Consulte o endereço ViaCEP</h1>
+<body>          
+            
+    <form class="central_card" action="">
 
-    <label>Digite seu CEP: </label>
-    <input type="number" id="cep">
+        <div class="top_card">
+            <div class="mb-3" id="div_cep">
+                <label for="cep" class="form-label">CEP:</label>
+                <input type="number" class="form-control" id="cep">
+            </div>
+    
+            <div class="mb-3" id="div_endereco">
+                <label for="endereco" class="form-label">Rua/Av.</label>
+                <input type="text" class="form-control" id="endereco">
+            </div>
+    
+            <div class="mb-3" id="div_numero">
+                <label for="numero" class="form-label">Número:</label>
+                <input type="number" class="form-control" id="numero">
+            </div>
+        </div>
 
-    <button onclick="consultarEndereco()"> Consultar </button>
-    <div id="resultado">
-        <p>Seu resultado aqui</p>
-    </div>
+    
+        <div class="middle_card">
+            <div class="mb-3" id="div_bairro">
+                <label for="bairro" class="form-label">Bairro:</label>
+                <input type="text" class="form-control" id="bairro">
+            </div>
+    
+            <div class="mb-3" id="div_estado">
+                <label for="estado" class="form-label">UF:</label>
+                <input type="text" class="form-control" id="estado">
+            </div>
+
+            <div class="mb-3" id="div_cidade">
+                <label for="cidade" class="form-label">Cidade:</label>
+                <input type="text" class="form-control" id="cidade">
+            </div>
+        </div>
+
+        <div class="bottom_card">
+            <div class="mb-3">
+                <label for="complemento" class="form-label">Complemento:</label>
+                <input type="text" class="form-control" id="complemento">
+            </div>
+        </div>
+
+    
+        <!-- <button onclick="consultarEndereco()" class="btn btn-primary">Consultar</button> -->
+    </form>
+
 </body>
 </html>

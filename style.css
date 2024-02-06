@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.central_card {
+    background-color: #F1F6F9;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    width: 800px;
+    margin-top: 30vh;
+}
+
+.top_card {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+}
+
+#div_cep {
+    width: 30%;
+    margin-right: 30px;
+}
+
+#div_endereco {
+    width: 50%;
+    margin-right: 30px;
+}
+
+#div_numero {
+    width: 20%;
+}
+
+.middle_card {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+}
+
+#div_bairro {
+    width: 30%;
+    margin-right: 30px;
+}
+
+#div_estado {
+    width: 30%;
+    margin-right: 30px;
+}
+
+#div_cidade {
+    width: 40%;
+}
+
+.bottom_card {
+    /* background-color: yellow; */
+}
