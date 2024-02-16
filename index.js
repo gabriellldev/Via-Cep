@@ -57,11 +57,31 @@ function validarCampos(){
         return false;
     }
 
+    if (document.querySelector('#estado').value.trim() == '') {
+        alert("Campo Estado vazio");
+
+        return false;
+    }
+
+    if (document.querySelector('#cidade').value.trim() == '') {
+        alert("Campo Cidade vazio");
+
+        return false;
+    }
+
     if (document.querySelector('#bairro').value == '') {
         alert("Campo Bairro vazio");
 
         return false;
     }
+
+    if (document.querySelector('#numero').value == '') {
+        alert("Campo Número vazio");
+
+        return false;
+    }
+
+    alert("Dados gravados com sucesso");
 
 }
 
