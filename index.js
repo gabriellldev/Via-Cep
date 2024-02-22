@@ -42,6 +42,7 @@ function limparCampos(){
     document.querySelector('#bairro').value = '';
     document.querySelector('#estado').value = '';
     document.querySelector('#cidade').value = '';
+    document.querySelector('#numero').value = '';
 }
 
 function validarCampos(){
