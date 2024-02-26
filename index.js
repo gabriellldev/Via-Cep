@@ -35,6 +35,10 @@ function consultarEndereco(){
 
 }
 
+// document.getElementById('cep').addEventListener('input', function() {
+//     consultarEndereco();
+// });
+
 function limparCampos(){
     document.querySelector('#cep').value = '';
     document.querySelector('#endereco').value = '';

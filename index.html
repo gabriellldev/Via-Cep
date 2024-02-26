@@ -14,7 +14,7 @@
         <div class="top_card">
             <div class="mb-3" id="div_cep">
                 <label for="cep" class="form-label">CEP:</label>
-                <input type="number" class="form-control" id="cep">
+                <input onblur="consultarEndereco()" type="number" class="form-control" id="cep">
             </div>
     
             <div class="mb-3" id="div_endereco">
@@ -55,8 +55,6 @@
 
         <hr class="divider">
     
-        <button type="submit" class="btn btn-primary"> Consultar </button>
-        <br>
         <button type="button" onclick="limparCampos()" class="btn btn-danger"> Limpar </button>
         <br>
         <button type="button" onclick="validarCampos()" class="btn btn-success"> Gravar </button>
